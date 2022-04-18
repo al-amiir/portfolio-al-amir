@@ -1,0 +1,31 @@
+.menu img {
+  position: fixed;
+  right: 29px;
+  top: 26px;
+  z-index: 3000;
+  cursor: pointer;
+}
+.menu-content {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  clip-path: inset(0 50%);
+  transition: 0.5s;
+  backdrop-filter: grayscale(1);
+}
+.menu-content button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 47px;
+  font-size: 3rem;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}

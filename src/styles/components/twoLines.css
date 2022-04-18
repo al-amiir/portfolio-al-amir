@@ -1,0 +1,17 @@
+.twoLines {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.twoLines p {
+  color: wheat;
+  font-size: 4rem;
+  letter-spacing: 36px;
+}
+.twoLines span {
+  background-color: black;
+}
