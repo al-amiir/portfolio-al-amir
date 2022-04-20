@@ -5,7 +5,7 @@ import TwoLines from "../components/TwoLines";
 const Home = () => {
   return (
     <div className="home">
-      <SplineFace />
+      {/* <SplineFace /> */}
       <Menu />
       <TwoLines />
     </div>
