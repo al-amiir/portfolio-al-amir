@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./components/Menu";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Story = React.lazy(() => import("./pages/Story"));
@@ -9,6 +10,7 @@ const App = () => {
       <div>
         {/* <Home /> */}
         <Story />
+        <Menu />
       </div>
     </React.Suspense>
   );

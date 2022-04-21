@@ -1,0 +1,51 @@
+.story_tape {
+  overflow: auto;
+  white-space: nowrap;
+  width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+  margin-top: 13px;
+  border-block: 10px dashed white;
+  outline: 13px solid;
+  background-color: black;
+  padding-block: 10px;
+}
+.story_tape-parts {
+  width: 300px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0.9);
+  background-color: darkred;
+  transition: 0.5s;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.story_tape-parts video {
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  filter: contrast(1.1) saturate(1.2) brightness(0.9);
+}
+.story_tape-parts p {
+  display: none;
+  transition: 0.3s;
+}
+.story_tape button {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+.gifBlock {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}

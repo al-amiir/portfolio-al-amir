@@ -1,64 +1,42 @@
 import React, { useState } from "react";
-
+import StoryTape from "../components/storyPageComponent/StoryTape";
+import alamirPhoto from "../styles/pics/alamir.png";
 const Story = () => {
-  const [storyPartIndex, setstoryPartIndex] = useState(0);
-  let sp;
-  function resetStoryParts(storyPartsWidth) {
-    document.querySelector(".story").style.width = `min-content`;
-    document.querySelectorAll(".story-parts").forEach((part) => {
-      part.style.width = `${storyPartsWidth}`;
-      part.style.transform = "scale(.9)";
-      part.style.height = "300px";
-    });
-    console.log(sp);
-  }
-  function displayOneStoryPart(e) {
-    resetStoryParts("0vw");
-    setstoryPartIndex(+e.target.dataset.index);
-    sp = document.querySelectorAll(".story-parts")[+e.target.dataset.index];
-    sp.style.transform = "scale(1)";
-    sp.style.width = "100vw";
-    sp.style.height = "80vh";
-    console.log(sp);
-  }
-  function closeDisplayedStoryPart() {
-    resetStoryParts("400px");
-    // setTimeout(() => {
-    //   sp.scrollIntoView({ behavior: "smooth", inline: "start" });
-    // }, 300);
-    console.log(sp);
-  }
-
+  window.scrollBy({
+    // top: 100, // could be negative value
+    right: 100,
+    behavior: "smooth",
+  });
   return (
     <div className="story">
-      <div className="story-parts" onClick={displayOneStoryPart} data-index="0">
-        <div data-index="0" className="gifBlock"></div>
-        <iframe src="https://giphy.com/embed/3o7aCTXVcHJgJ4yoeI" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+      <div className="story_text">
+        <h1 className="story_text-header">AL Amir</h1>
+        <p className="story_text-intro">Web Developer and Creative designer</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quod! Aspernatur blanditiis, sit rerum earum officiis odit deserunt natus delectus iusto? Accusantium quia rem molestias hic iure architecto ipsam atque.</p>
       </div>
-      <div className="story-parts">
-        <div onClick={displayOneStoryPart} data-index="1" className="gifBlock"></div>
-        {/* <iframe src="https://giphy.com/embed/3o6fJgEOrF1lky8WFa" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe> */}
-        <iframe src="https://giphy.com/embed/5ug3SS4tRzs88" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+      <div>
+        <div className="story_photo">
+          <img src={alamirPhoto} alt="" />
+          <div className="story_photo-text">
+            <span>JavaScript</span>
+            <span>SASS</span>
+            <span>Css</span>
+            <span>Node</span>
+            <span>React</span>
+            <span>graphQL</span>
+            <span>React</span>
+            <span>Spline 3D</span>
+            <span>MongoDB</span>
+            <span>Express</span>
+            <span>HTML</span>
+            <span>Angular</span>
+            <span>Express</span>
+            <span>REST API</span>
+            <span>Async</span>
+          </div>
+        </div>
+        <StoryTape />
       </div>
-
-      <div className="story-parts">
-        <div onClick={displayOneStoryPart} data-index="2" className="gifBlock"></div>
-        <iframe src="https://giphy.com/embed/Wt7Mwj8SyC9Y2WcdRO" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-      </div>
-
-      <div className="story-parts">
-        <div onClick={displayOneStoryPart} data-index="3" className="gifBlock"></div>
-        <iframe src="https://giphy.com/embed/fhAwk4DnqNgw8" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-      </div>
-      {/* <div className="story-parts">
-        <div onClick={displayOneStoryPart} data-index="4" className="gifBlock"></div>
-        <iframe src="https://giphy.com/embed/RbDKaczqWovIugyJmW" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-      </div> */}
-      <div onClick={displayOneStoryPart} className="story-parts" data-index="4">
-        <div onClick={displayOneStoryPart} data-index="4" className="gifBlock"></div>
-        <iframe src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="100%" height="100%" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <button onClick={closeDisplayedStoryPart}>close</button>
     </div>
   );
 };
