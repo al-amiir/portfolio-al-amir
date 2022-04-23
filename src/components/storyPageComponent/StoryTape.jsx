@@ -43,6 +43,7 @@ const StoryTape = () => {
         <video autoPlay loop muted playsInline>
           <source src={pirateVideo} type="video/mp4" />
         </video>
+        <div className="story_tape-parts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis explicabo quo odit sunt doloremque neque cum, assumenda porro sit veniam asperiores nisi amet tempore voluptas provident distinctio impedit illum. Accusantium?</div>
         {/* <p>I graduated as a marine engineer from faculty of engineering </p> */}
         {/* <button onClick={closeDisplayedStoryPart}>close</button> */}
       </div>
@@ -53,6 +54,8 @@ const StoryTape = () => {
         <video autoPlay loop muted playsInline>
           <source src={innovationVideo} type="video/mp4" />
         </video>
+        <div className="story_tape-parts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis explicabo quo odit sunt doloremque neque cum, assumenda porro sit veniam asperiores nisi amet tempore voluptas provident distinctio impedit illum. Accusantium?</div>
+
         {/* <p>I always had a passion for coding and art</p> */}
         {/* <button onClick={closeDisplayedStoryPart}>close</button> */}
       </div>

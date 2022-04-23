@@ -1,0 +1,21 @@
+.button_scroll {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 60px;
+  height: 20px;
+  /* background-color: red; */
+  border: 3px solid black;
+  border-radius: 64px;
+}
+.button_scroll span {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}

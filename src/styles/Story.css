@@ -1,6 +1,25 @@
+.cursor {
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: 0.1s;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  z-index: 100;
+}
+
+.story_container {
+  position: fixed;
+  width: 2200px;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
 .story {
+  position: absolute;
   display: flex;
-  width: min-content;
   height: 100vh;
   background-image: linear-gradient(45deg, brown, black);
 }
