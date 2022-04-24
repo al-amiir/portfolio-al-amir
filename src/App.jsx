@@ -1,8 +1,8 @@
 import React from "react";
 import Menu from "./components/Menu";
 
-const Home = React.lazy(() => import("./pages/Home"));
-const Story = React.lazy(() => import("./pages/Story"));
+const Home = React.lazy(() => import("./mainComponents/Home"));
+const Story = React.lazy(() => import("./mainComponents/storyPageComponent/Story"));
 
 const App = () => {
   return (

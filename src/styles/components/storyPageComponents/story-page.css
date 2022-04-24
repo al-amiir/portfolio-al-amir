@@ -11,16 +11,11 @@
 
 .story_container {
   position: fixed;
+  display: flex;
   width: 2200px;
   height: 100vh;
   scroll-behavior: smooth;
   overflow: hidden;
-}
-
-.story {
-  position: absolute;
-  display: flex;
-  height: 100vh;
   background-image: linear-gradient(45deg, brown, black);
 }
 .story_text {
@@ -32,12 +27,14 @@
   padding-left: 11px;
   font-size: 8rem;
   margin-bottom: 10px;
-  font-family: "Bebas Neue", cursive;
 }
-.story_text-intro {
+.story_text-subHeader {
   font-size: 2rem;
   margin: 0px;
-  font-family: "Bebas Neue", cursive;
+}
+.story_text-intro {
+  font-family: system-ui, sans-serif;
+  font-size: 1.1rem;
 }
 .story_photo {
   display: flex;
@@ -46,55 +43,57 @@
 }
 .story_photo img {
   height: 500px;
+  filter: saturate(1.1) contrast(1.1);
 }
 .story_photo-text {
   display: grid;
   grid-template-columns: repeat(5, min-content);
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
+  letter-spacing: 3px;
 }
 .story_photo-text :nth-child(1) {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .story_photo-text :nth-child(2) {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .story_photo-text :nth-child(3) {
-  font-size: 8rem;
+  font-size: 9rem;
 }
 .story_photo-text :nth-child(4) {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .story_photo-text :nth-child(5) {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .story_photo-text :nth-child(6) {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .story_photo-text :nth-child(7) {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 .story_photo-text :nth-child(8) {
   font-size: 2.5rem;
 }
 .story_photo-text :nth-child(9) {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 .story_photo-text :nth-child(10) {
-  font-size: 2rem;
-}
-.story_photo-text :nth-child(11) {
-  font-size: 4rem;
-}
-.story_photo-text :nth-child(12) {
-  font-size: 1rem;
-}
-.story_photo-text :nth-child(13) {
   font-size: 3rem;
 }
-.story_photo-text :nth-child(14) {
+.story_photo-text :nth-child(11) {
+  font-size: 5rem;
+}
+.story_photo-text :nth-child(12) {
   font-size: 2rem;
 }
+.story_photo-text :nth-child(13) {
+  font-size: 4rem;
+}
+.story_photo-text :nth-child(14) {
+  font-size: 3rem;
+}
 .story_photo-text :nth-child(15) {
-  font-size: 2rem;
+  font-size: 3rem;
 }
