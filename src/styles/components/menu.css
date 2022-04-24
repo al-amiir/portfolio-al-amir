@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60px;
   line-height: 47px;
   font-size: 3rem;
   background-color: orange;
