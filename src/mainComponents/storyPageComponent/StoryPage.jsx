@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollButton from "../../components/ScrollButton";
 import StoryTape from "./StoryTape";
-import alamirPhoto from "../../styles/pics/alamir.png";
+import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
 
 const Story = () => {

@@ -7,10 +7,18 @@
 @import url(./styles/components/storyPageComponents/story-page.css);
 @import url(./styles/components/storyPageComponents/story-tape.css);
 
+@import url(./styles/components/projectPageComponent/projectPage.css);
+
 @import url(./styles/components/twoLines.css);
 @import url(./styles/components/menu.css);
 @import url(./styles/components/buttons.css);
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   box-sizing: border-box;
   margin: 0;
