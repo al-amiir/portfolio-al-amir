@@ -4,7 +4,14 @@ import StoryTape from "./StoryTape";
 import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
 
+import { createBrowserHistory } from "history";
+
 const Story = () => {
+  let history = createBrowserHistory();
+  useEffect(() => {
+    console.log("project", history.location);
+  }, []);
+
   let offset = 0;
   useEffect(() => {
     const body = document.body,
@@ -39,9 +46,16 @@ const Story = () => {
         {/* Story Text Name And Intro  */}
         <div className="story_text">
           <h1 className="story_text-header">AL Amir</h1>
-          <p className="story_text-subHeader">Web Developer and Creative designer</p>
+          <p className="story_text-subHeader">
+            Web Developer and Creative designer
+          </p>
           <p className="story_text-intro">
-            I'm 26 yrs old, Egyptian living in Alexandria Egypt, Loves to combine between programming and art, Always practicing, Reading docs and Updating my skills, This is my <strong style={{ fontSize: "1.2rem", letterSpacing: "1px" }}>Life Story</strong>{" "}
+            I'm 26 yrs old, Egyptian living in Alexandria Egypt, Loves to
+            combine between programming and art, Always practicing, Reading docs
+            and Updating my skills, This is my{" "}
+            <strong style={{ fontSize: "1.2rem", letterSpacing: "1px" }}>
+              Life Story
+            </strong>{" "}
           </p>
         </div>
 
@@ -70,7 +84,11 @@ const Story = () => {
           </div>
           {/* Story Tape */}
           <div className="story_tape-box">
-            <img src={arrowImage} alt="arrow image" className="story_tape-box-image" />
+            <img
+              src={arrowImage}
+              alt="arrow image"
+              className="story_tape-box-image"
+            />
             <StoryTape />
           </div>
         </div>

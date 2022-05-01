@@ -5,7 +5,15 @@ import furnitureImage from "../../styles/pics/projects/furniture.png";
 import ProjectDetails from "./ProjectDetails";
 import ProjectTubes from "./ProjectTubes";
 
-const ProjectPage = () => {
+import {createBrowserHistory } from "history";
+
+const ProjectPage = ({setDisplayedLocation}) => {
+  let history = createBrowserHistory();
+  useEffect(() => {
+  console.log("project",history.location)
+
+  }, [])
+  
   const [projectIndex, setProjectIndex] = useState(0);
   const [fetchedProjects, setFetchedProjects] = useState([
     {
