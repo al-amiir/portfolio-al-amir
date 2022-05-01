@@ -8,7 +8,9 @@
   background-color: red;
   z-index: 100;
 }
-
+.story {
+  transition: 3s;
+}
 .story_container {
   position: fixed;
   display: flex;

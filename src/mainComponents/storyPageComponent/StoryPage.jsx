@@ -4,15 +4,20 @@ import StoryTape from "./StoryTape";
 import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
 
-import { createBrowserHistory } from "history";
-
 const Story = () => {
-  let history = createBrowserHistory();
+  const [opacity, setOpacity] = useState(0);
+  // const [translateX, setTranslateX] = useState("100vw");
+  let offset = 0;
+
   useEffect(() => {
-    console.log("project", history.location);
+    setOpacity(1);
+    // setTranslateX("0vw");
+    return () => {
+      setOpacity(0);
+      // setTranslateX("100vw");
+    };
   }, []);
 
-  let offset = 0;
   useEffect(() => {
     const body = document.body,
       scrollWrap = document.querySelector(".story_container"),
@@ -40,7 +45,7 @@ const Story = () => {
   }, []);
 
   return (
-    <div>
+    <div className="story" style={{ opacity: `${opacity}` }}>
       {/* Story Container  */}
       <div className="story_container">
         {/* Story Text Name And Intro  */}

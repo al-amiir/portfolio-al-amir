@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Menu from "./components/Menu";
 import { createBrowserHistory } from "history";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+import Menu from "./components/Menu";
 import ProjectPage from "./mainComponents/projectsPageComponent/ProjectPage";
 
 const Home = React.lazy(() => import("./mainComponents/Home"));

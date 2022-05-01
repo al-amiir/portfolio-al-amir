@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const Menu = ({ setDisplayedLocation }) => {
   const [display, setDisplay] = useState(false);
   function handleDisplayMenu() {
+    // setTimeout(() => {
     setDisplay((prev) => !prev);
+    // }, seconds);
   }
 
   return (

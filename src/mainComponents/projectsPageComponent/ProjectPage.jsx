@@ -5,24 +5,30 @@ import furnitureImage from "../../styles/pics/projects/furniture.png";
 import ProjectDetails from "./ProjectDetails";
 import ProjectTubes from "./ProjectTubes";
 
-import {createBrowserHistory } from "history";
+const ProjectPage = () => {
+  const [opacity, setOpacity] = useState(0);
+  // const [translateX, setTranslateX] = useState("-100vw");
 
-const ProjectPage = ({setDisplayedLocation}) => {
-  let history = createBrowserHistory();
   useEffect(() => {
-  console.log("project",history.location)
+    setOpacity(1);
+    // setTranslateX("0vw");
+    return () => {
+      setOpacity(0);
+      // setTranslateX("-100vw");
+    };
+  }, []);
 
-  }, [])
-  
   const [projectIndex, setProjectIndex] = useState(0);
   const [fetchedProjects, setFetchedProjects] = useState([
     {
       number: 0,
       name: "portfolio",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
-        youtube: "https://www.youtube.com/watch?v=yHXzoj2mp-g&t=0s&ab_channel=AlAmir",
+        youtube:
+          "https://www.youtube.com/watch?v=yHXzoj2mp-g&t=0s&ab_channel=AlAmir",
         code: "",
       },
       image: portfolioImage,
@@ -30,7 +36,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 1,
       name: "MERN",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -41,7 +48,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 2,
       name: "furniture",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -52,7 +60,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 3,
       name: "portfolio",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -63,7 +72,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 4,
       name: "MERN",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -74,7 +84,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 5,
       name: "MERN",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -85,7 +96,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 6,
       name: "MERN",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -96,7 +108,8 @@ const ProjectPage = ({setDisplayedLocation}) => {
     {
       number: 7,
       name: "MERN",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
       links: {
         live: "",
         youtube: "",
@@ -105,12 +118,24 @@ const ProjectPage = ({setDisplayedLocation}) => {
       image: mernImage,
     },
   ]);
-  const [projectStyle, setProjectStyle] = useState(Array(fetchedProjects.length).fill({ height: "150px", width: "15px", border: "1px solid #710000", backgroundColor: "transparent", boxShadow: "0 0  black" }));
+  const [projectStyle, setProjectStyle] = useState(
+    Array(fetchedProjects.length).fill({
+      height: "150px",
+      width: "15px",
+      border: "1px solid #710000",
+      backgroundColor: "transparent",
+      boxShadow: "0 0  black",
+    })
+  );
 
   return (
-    <div className="project_container">
+    <div className="project_container" style={{ opacity: `${opacity}` }}>
       <ProjectDetails projectInfo={fetchedProjects[projectIndex]} />
-      <ProjectTubes projectStyle={projectStyle} setProjectStyle={setProjectStyle} setProjectIndex={setProjectIndex} />
+      <ProjectTubes
+        projectStyle={projectStyle}
+        setProjectStyle={setProjectStyle}
+        setProjectIndex={setProjectIndex}
+      />
     </div>
   );
 };
