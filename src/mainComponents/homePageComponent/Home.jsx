@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Menu from "../components/Menu";
-import SplineFace from "../components/Spline-Face";
-import TwoLines from "../components/TwoLines";
+import Menu from "../../components/Menu";
+import SplineFace from "../../components/Spline-Face";
+import TwoLines from "../../components/TwoLines";
 const Home = () => {
   const [opacity, setOpacity] = useState(0);
 
