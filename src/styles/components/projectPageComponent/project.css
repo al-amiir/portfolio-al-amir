@@ -6,7 +6,9 @@
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-image: linear-gradient(180deg, #9e0000, #b40000, black, black);
+  /* background-image: linear-gradient(180deg, #9e0000, #b40000, black, black); */
+  background-image: linear-gradient(180deg, #a30000, black);
+
   transition: 3s;
 }
 .project_details {

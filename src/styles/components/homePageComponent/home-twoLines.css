@@ -2,7 +2,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100vw;
   height: 100vh;
   overflow: hidden;

@@ -4,22 +4,19 @@ import SplineFace from "../components/Spline-Face";
 import TwoLines from "../components/TwoLines";
 const Home = () => {
   const [opacity, setOpacity] = useState(0);
-  const [translateX, setTranslateX] = useState("0vw");
 
   useEffect(() => {
+    document.body.style.width = "100vw";
+    document.body.style.height = "100vh";
+
     setOpacity(1);
-    setTranslateX("0vw");
     return () => {
       setOpacity(0);
-      setTranslateX("-100vw");
     };
   }, []);
 
   return (
-    <div
-      className="home"
-      style={{ opacity: `${opacity}`, transform: `translateX(${translateX})` }}
-    >
+    <div className="home" style={{ opacity: `${opacity}` }}>
       {/* <SplineFace /> */}
       <Menu />
       <TwoLines />

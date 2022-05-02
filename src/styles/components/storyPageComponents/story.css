@@ -18,7 +18,8 @@
   height: 100vh;
   scroll-behavior: smooth;
   overflow: hidden;
-  background-image: linear-gradient(45deg, brown, black);
+  /* background-image: linear-gradient(45deg, brown, black); */
+  background-image: linear-gradient(180deg, #a30000, black);
 }
 .story_text {
   width: 500px;

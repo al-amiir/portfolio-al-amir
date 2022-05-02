@@ -20,8 +20,8 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <Menu />
       <React.Suspense fallback={<p>Loading ...</p>}>
-        <Menu setDisplayedLocation={setDisplayedLocation} />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

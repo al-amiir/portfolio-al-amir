@@ -23,19 +23,19 @@ const Menu = ({ setDisplayedLocation }) => {
       >
         <Link to="/">
           <button>
-            <span>I</span>
-            <span>N</span>
+            <span>H</span>
+            <span>O</span>
+            <span>M</span>
             <span>E</span>
-            <span>D</span>
           </button>
         </Link>
         <Link to="/story">
           <button>
-            <span>A</span>
-            <span>B</span>
-            <span>O</span>
-            <span>U</span>
+            <span>S</span>
             <span>T</span>
+            <span>O</span>
+            <span>R</span>
+            <span>Y</span>
           </button>
         </Link>
         <Link to="work">

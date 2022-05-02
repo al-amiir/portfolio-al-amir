@@ -7,14 +7,14 @@ import ProjectTubes from "./ProjectTubes";
 
 const ProjectPage = () => {
   const [opacity, setOpacity] = useState(0);
-  // const [translateX, setTranslateX] = useState("-100vw");
 
   useEffect(() => {
+    document.body.style.width = "100vw";
+    document.body.style.height = "100vh";
+
     setOpacity(1);
-    // setTranslateX("0vw");
     return () => {
       setOpacity(0);
-      // setTranslateX("-100vw");
     };
   }, []);
 

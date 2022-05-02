@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* Components  */
-@import url(./styles/home.css);
+@import url(./styles/components/homePageComponent/home.css);
+@import url(./styles/components/homePageComponent/home-twoLines.css);
 
-@import url(./styles/components/storyPageComponents/story-page.css);
+@import url(./styles/components/storyPageComponents/story.css);
 @import url(./styles/components/storyPageComponents/story-tape.css);
 
-@import url(./styles/components/projectPageComponent/projectPage.css);
+@import url(./styles/components/projectPageComponent/project.css);
 
-@import url(./styles/components/twoLines.css);
 @import url(./styles/components/menu.css);
 @import url(./styles/components/buttons.css);
 
