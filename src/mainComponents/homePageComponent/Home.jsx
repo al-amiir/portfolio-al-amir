@@ -19,14 +19,14 @@ const Home = () => {
   return (
     <div className="home" style={{ opacity: `${opacity}` }}>
       <span className="logo">portfolio</span>
-      <SplineFace />
+      {/* <SplineFace /> */}
       <TwoLines />
 
       <Link className="button_story" to="/story">
         <span>my story</span>
-        <img src="https://img.icons8.com/ios/35/ffffff/double-right.png" />
+        <img src="https://img.icons8.com/ios/37/ffffff/double-right.png" />
       </Link>
-      <span className="copyRight">2022 alamir copy righ</span>
+      <span className="copyRight">2022 alamir copy right</span>
     </div>
   );
 };

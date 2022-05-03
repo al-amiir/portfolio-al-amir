@@ -6,16 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 500;
   width: 60px;
   height: 20px;
   /* background-color: red; */
-  border: 3px solid black;
+  border: 3px solid rgb(255, 0, 0);
   border-radius: 64px;
 }
 .button_scroll span {
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: rgb(255, 0, 0);
   border-radius: 50%;
 }

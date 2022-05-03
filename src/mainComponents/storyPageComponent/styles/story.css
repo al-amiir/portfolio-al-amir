@@ -18,12 +18,12 @@
   height: 100vh;
   scroll-behavior: smooth;
   overflow: hidden;
-  /* background-image: linear-gradient(45deg, brown, black); */
   background-image: linear-gradient(180deg, #a30000, black);
 }
 .story_text {
-  width: 500px;
+  width: fit-content;
   padding-left: 20px;
+  padding-top: 100px;
 }
 .story_text-header {
   border-left: 11px solid #ff7400;
@@ -55,6 +55,19 @@
   justify-items: center;
   letter-spacing: 3px;
 }
+
+@media only screen and (max-width: 400px) {
+  .story_text {
+    width: 350px;
+  }
+  .story_text-subHeader {
+    font-size: 27px;
+  }
+  .story_text-intro {
+    font-size: 15.6px;
+  }
+}
+
 .story_photo-text :nth-child(1) {
   font-size: 5rem;
 }

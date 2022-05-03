@@ -13,7 +13,7 @@ const Menu = ({ setDisplayedLocation }) => {
     <div className="menu">
       <img
         onClick={handleDisplayMenu}
-        src="https://img.icons8.com/ios-filled/50/000000/stripped-patterns-2.png"
+        src="https://img.icons8.com/ios-filled/50/ff7400/stripped-patterns-2.png"
       />
       <div
         className="menu-content"

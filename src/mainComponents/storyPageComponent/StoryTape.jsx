@@ -22,11 +22,11 @@ const StoryTape = () => {
     },
     {
       videoSrc: studingVideo,
-      text: "4- So I started to study, practice and deploy.",
+      text: "4- So I started to study, practice, read docs and deploy.",
     },
     {
       videoSrc: codingVideo,
-      text: "5- Now I'm doing what I wanted to be, a developer and a designer.",
+      text: "5- Now I'm doing what I wanted to be, a web developer and a designer.",
     },
   ];
   return (
