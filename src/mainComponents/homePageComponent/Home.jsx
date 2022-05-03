@@ -9,7 +9,6 @@ const Home = () => {
   useEffect(() => {
     document.body.style.width = "100vw";
     document.body.style.height = "100vh";
-
     setOpacity(1);
     return () => {
       setOpacity(0);
@@ -19,7 +18,7 @@ const Home = () => {
   return (
     <div className="home" style={{ opacity: `${opacity}` }}>
       <span className="logo">portfolio</span>
-      {/* <SplineFace /> */}
+      <SplineFace />
       <TwoLines />
 
       <Link className="button_story" to="/story">

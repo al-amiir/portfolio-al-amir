@@ -1,0 +1,65 @@
+.connect {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transition: 3s;
+}
+.connect_links {
+  position: fixed;
+  left: 20%;
+  top: 100px;
+  list-style: decimal-leading-zero;
+  font-size: 47px;
+  z-index: 12;
+}
+.connect_links li a {
+  color: black;
+}
+.hire {
+  font-size: 273px;
+  width: 100%;
+  z-index: 11;
+  text-align: center;
+  position: fixed;
+  color: #160101;
+  mix-blend-mode: darken;
+  bottom: 3px;
+}
+.hero {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: contrast(1.5);
+}
+.overlay {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-image: linear-gradient(5deg, #ff0000, #100000); */
+  background-image: linear-gradient(180deg, #a30000, black);
+
+  z-index: 10;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 1007px) {
+  .hire {
+    font-size: 215px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hire {
+    font-size: 158px;
+    bottom: 39px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hire {
+    font-size: 104px;
+    bottom: 61px;
+  }
+}
