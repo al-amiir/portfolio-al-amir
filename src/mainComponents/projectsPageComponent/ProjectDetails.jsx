@@ -6,7 +6,7 @@ const ProjectDetails = ({ projectInfo }) => {
       <div className="project_details-left">
         <div className="project_details-text">
           <h1>
-            {`-${projectInfo.number}`}
+            {`${projectInfo.number}`}
             &nbsp;
             {projectInfo.name}
           </h1>

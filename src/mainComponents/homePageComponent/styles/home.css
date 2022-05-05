@@ -8,19 +8,11 @@
   transition: 3s;
 }
 
-.button_story {
+.home_navigation {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0;
   right: 29px;
   top: 50%;
   z-index: 500;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 3px;
-  font-size: 20px;
 }
 .splineFace {
   width: 100%;
@@ -49,6 +41,10 @@
   font-size: 12px;
 }
 
+.splineFace canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
 @media only screen and (max-width: 700px) {
   .splineFace {
     height: 700px;
@@ -56,19 +52,20 @@
 }
 @media only screen and (max-width: 500px) {
   .splineFace {
+    position: fixed;
+    left: 0px;
     height: 500px;
+    width: 350px;
   }
   .button_story span {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .splineFace {
-    height: 400px;
+    display: none !important;
   }
-}
-@media only screen and (max-width: 300px) {
-  .splineFace {
-    height: 300px;
+  .button_story span {
+    display: initial;
   }
 }

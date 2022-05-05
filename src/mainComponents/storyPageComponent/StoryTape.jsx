@@ -10,23 +10,23 @@ const StoryTape = () => {
   let storyTapeContent = [
     {
       videoSrc: pirateVideo,
-      text: "1- I was a marine engineer, Graduated in 2018.",
+      text: "I was a marine engineer, Graduated in 2018.",
     },
     {
       videoSrc: innovationVideo,
-      text: "2- But I always had a passion for coding and design.",
+      text: "But I always had a passion for coding and design.",
     },
     {
       videoSrc: runVideo,
-      text: "3- In 2020 I decided to finally following my passion.",
+      text: "In 2020 I decided to finally following my passion.",
     },
     {
       videoSrc: studingVideo,
-      text: "4- So I started to study, practice, read docs and deploy.",
+      text: "So I started to study, practice, read docs and deploy.",
     },
     {
       videoSrc: codingVideo,
-      text: "5- Now I'm doing what I wanted to be, a web developer and a designer.",
+      text: "Now I'm doing what I wanted to be, a web developer and a designer.",
     },
   ];
   return (

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { createBrowserHistory } from "history";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-// import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import Loader from "./components/loader/Loader";
 import Menu from "./components/Menu";
-import ProjectPage from "./mainComponents/projectsPageComponent/ProjectPage";
 
 const Home = React.lazy(() =>
   import("./mainComponents/homePageComponent/Home")
@@ -12,34 +9,26 @@ const Home = React.lazy(() =>
 const Story = React.lazy(() =>
   import("./mainComponents/storyPageComponent/StoryPage")
 );
+const ProjectPage = React.lazy(() =>
+  import("./mainComponents/projectsPageComponent/ProjectPage")
+);
+
 const ConnectPage = React.lazy(() =>
   import("./mainComponents/connectPageComponent/ConnectPage")
 );
 
 const App = () => {
-  let history = createBrowserHistory();
-  const [displayedLocation, setDisplayedLocation] = useState(history);
-
+  const [loaderWidth, setLoaderWidth] = useState("100vw");
   return (
     <BrowserRouter>
       <Menu />
-      <React.Suspense fallback={<p>Loading ...</p>}>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/story"
-              element={<Story setDisplayedLocation={setDisplayedLocation} />}
-            />
-            <Route
-              path="/work"
-              element={
-                <ProjectPage setDisplayedLocation={setDisplayedLocation} />
-              }
-            />
-            <Route path="/connect" element={<ConnectPage />} />
-          </Routes>
-        </div>
+      <React.Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/work" element={<ProjectPage />} />
+          <Route path="/connect" element={<ConnectPage />} />
+        </Routes>
       </React.Suspense>
     </BrowserRouter>
   );

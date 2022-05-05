@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Menu = ({ setDisplayedLocation }) => {
   const [display, setDisplay] = useState(false);
-  function handleDisplayMenu() {
-    // setTimeout(() => {
-    setDisplay((prev) => !prev);
-    // }, seconds);
+  function handleDisplayMenu(seconds = 0) {
+    setTimeout(() => {
+      setDisplay((prev) => !prev);
+    }, seconds);
   }
 
   return (
@@ -21,7 +21,12 @@ const Menu = ({ setDisplayedLocation }) => {
           clipPath: `${display ? "inset(0 0 0 0)" : "inset(0 50% 0 50%)"}`,
         }}
       >
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => {
+            handleDisplayMenu(200);
+          }}
+        >
           <button>
             <span>H</span>
             <span>O</span>
@@ -29,7 +34,12 @@ const Menu = ({ setDisplayedLocation }) => {
             <span>E</span>
           </button>
         </Link>
-        <Link to="/story">
+        <Link
+          to="/story"
+          onClick={() => {
+            handleDisplayMenu(200);
+          }}
+        >
           <button>
             <span>S</span>
             <span>T</span>
@@ -38,7 +48,12 @@ const Menu = ({ setDisplayedLocation }) => {
             <span>Y</span>
           </button>
         </Link>
-        <Link to="work">
+        <Link
+          to="work"
+          onClick={() => {
+            handleDisplayMenu(200);
+          }}
+        >
           <button>
             <span>W</span>
             <span>O</span>
@@ -46,7 +61,12 @@ const Menu = ({ setDisplayedLocation }) => {
             <span>K</span>
           </button>
         </Link>
-        <Link to="connect">
+        <Link
+          to="connect"
+          onClick={() => {
+            handleDisplayMenu(200);
+          }}
+        >
           <button>
             <span>T</span>
             <span>A</span>

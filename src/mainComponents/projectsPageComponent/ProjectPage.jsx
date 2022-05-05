@@ -4,6 +4,7 @@ import portfolioImage from "../../styles/pics/projects/portfolio1.png";
 import furnitureImage from "../../styles/pics/projects/furniture.png";
 import ProjectDetails from "./ProjectDetails";
 import ProjectTubes from "./ProjectTubes";
+import ButtonNext from "../../components/nextPageButton/ButtonNext";
 
 const ProjectPage = () => {
   const [opacity, setOpacity] = useState(0);
@@ -21,7 +22,7 @@ const ProjectPage = () => {
   const [projectIndex, setProjectIndex] = useState(0);
   const [fetchedProjects, setFetchedProjects] = useState([
     {
-      number: 0,
+      number: "00",
       name: "portfolio",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
@@ -34,7 +35,7 @@ const ProjectPage = () => {
       image: portfolioImage,
     },
     {
-      number: 1,
+      number: "01",
       name: "MERN",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
@@ -46,7 +47,7 @@ const ProjectPage = () => {
       image: mernImage,
     },
     {
-      number: 2,
+      number: "02",
       name: "furniture",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
@@ -58,7 +59,7 @@ const ProjectPage = () => {
       image: furnitureImage,
     },
     {
-      number: 3,
+      number: "03",
       name: "portfolio",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",

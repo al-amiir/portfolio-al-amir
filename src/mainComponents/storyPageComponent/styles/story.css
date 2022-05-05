@@ -44,7 +44,7 @@
   height: 400px;
   overflow: hidden;
 }
-.story_photo img {
+.story_photo-img {
   height: 500px;
   filter: saturate(1.1) contrast(1.1);
 }

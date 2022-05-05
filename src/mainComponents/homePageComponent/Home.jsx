@@ -1,32 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Menu from "../../components/Menu";
-import SplineFace from "../../components/Spline-Face";
+import Loader from "../../components/loader/Loader";
+import ButtonNext from "../../components/nextPageButton/ButtonNext";
+// import SplineFace from "../../components/Spline-Face";
 import TwoLines from "./TwoLines";
+
+const SplineFace = React.lazy(() => import("../../components/Spline-Face"));
 const Home = () => {
   const [opacity, setOpacity] = useState(0);
-
+  const [loaderDisplay, setLoaderDisplay] = useState("block");
   useEffect(() => {
     document.body.style.width = "100vw";
     document.body.style.height = "100vh";
-    setOpacity(1);
+
+    setTimeout(() => {
+      setLoaderDisplay("none");
+      setOpacity(1);
+    }, 5000);
     return () => {
       setOpacity(0);
     };
   }, []);
 
   return (
-    <div className="home" style={{ opacity: `${opacity}` }}>
-      <span className="logo">portfolio</span>
-      <SplineFace />
-      <TwoLines />
-
-      <Link className="button_story" to="/story">
-        <span>my story</span>
-        <img src="https://img.icons8.com/ios/37/ffffff/double-right.png" />
-      </Link>
-      <span className="copyRight">2022 alamir copy right</span>
-    </div>
+    <React.Suspense fallback={<Loader />}>
+      <div style={{ display: `${loaderDisplay}` }}>
+        <Loader />
+      </div>
+      <div className="home" style={{ opacity: `${opacity}` }}>
+        <span className="logo">portfolio</span>
+        {/* <SplineFace /> */}
+        <TwoLines />
+        <div className="home_navigation">
+          <ButtonNext to="/story" name="My Story" />
+        </div>
+        <span className="copyRight">
+          &copy; Copyright 2022 Al-Amir all rights reserved
+        </span>
+      </div>
+    </React.Suspense>
   );
 };
 

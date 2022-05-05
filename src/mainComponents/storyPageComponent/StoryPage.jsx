@@ -3,6 +3,8 @@ import ScrollButton from "../../components/ScrollButton";
 import StoryTape from "./StoryTape";
 import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
+import { Link } from "react-router-dom";
+import ButtonNext from "../../components/nextPageButton/ButtonNext";
 
 const Story = () => {
   const [opacity, setOpacity] = useState(0);
@@ -24,18 +26,20 @@ const Story = () => {
       width = scrollWrap.getBoundingClientRect().width,
       speed = 0.02;
 
-    body.style.width = Math.floor(width) + "px";
-    body.style.height = "100vh";
+    body.style.width = "100vw";
+    if (window.innerWidth > 636) {
+      body.style.height = Math.floor(width) - (window.innerWidth - 636) + "px";
+    } else {
+      body.style.height = Math.floor(width) + (636 - window.innerWidth) + "px";
+    }
 
     function smoothScroll() {
-      offset += (window.pageXOffset - offset) * speed;
+      offset += (window.pageYOffset - offset) * speed;
       let scroll = "translateX(-" + offset + "px) translateZ(0)";
       scrollWrap.style.transform = scroll;
-
       requestAnimationFrame(smoothScroll);
     }
     smoothScroll();
-
     // body.onmousemove = (e) => {
     //   console.log(e.pageY * 0.1);
     //   document.querySelector(".cursor").style.top = `${e.pageY}px`;
@@ -67,7 +71,12 @@ const Story = () => {
         {/* Story Author's Photo And Story Tape Of Videos  */}
         <div>
           <div className="story_photo">
-            <img src={alamirPhoto} alt="Al Amir's Photo" />
+            {/* My Image  */}
+            <img
+              className="story_photo-img"
+              src={alamirPhoto}
+              alt="Al Amir's Photo"
+            />
             {/* Skills  */}
             <div className="story_photo-text">
               <span>JavaScript</span>
