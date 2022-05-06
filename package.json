@@ -4,8 +4,6 @@
   "version": "0.0.0",
   "homepage": "https://al-amiir.github.io/portfolio-al-amir",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "postinstall": "npm run start",
     "start": "vite",
     "build": "vite build",
