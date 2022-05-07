@@ -45,7 +45,7 @@
   width: 100% !important;
   height: 100% !important;
 }
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
   .splineFace {
     height: 700px;
   }
@@ -60,11 +60,11 @@
   .button_story span {
     display: none;
   }
-}
+} */
 @media only screen and (max-width: 450px) {
-  .splineFace {
+  /* .splineFace {
     display: none !important;
-  }
+  } */
   .button_story span {
     display: initial;
   }

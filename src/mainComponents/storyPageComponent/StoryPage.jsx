@@ -3,20 +3,15 @@ import ScrollButton from "../../components/ScrollButton";
 import StoryTape from "./StoryTape";
 import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
-import { Link } from "react-router-dom";
-import ButtonNext from "../../components/nextPageButton/ButtonNext";
 
 const Story = () => {
   const [opacity, setOpacity] = useState(0);
-  // const [translateX, setTranslateX] = useState("100vw");
   let offset = 0;
 
   useEffect(() => {
     setOpacity(1);
-    // setTranslateX("0vw");
     return () => {
       setOpacity(0);
-      // setTranslateX("100vw");
     };
   }, []);
 
@@ -40,12 +35,6 @@ const Story = () => {
       requestAnimationFrame(smoothScroll);
     }
     smoothScroll();
-    // body.onmousemove = (e) => {
-    //   console.log(e.pageY * 0.1);
-    //   document.querySelector(".cursor").style.top = `${e.pageY}px`;
-    //   document.querySelector(".cursor").style.left = `${e.pageX}px`;
-    // };
-    //  <div className="cursor"></div>
   }, []);
 
   return (
@@ -59,12 +48,12 @@ const Story = () => {
             Web Developer and Creative designer
           </p>
           <p className="story_text-intro">
-            I'm 26 yrs old, Egyptian living in Alexandria Egypt, Loves to
-            combine between programming and art, Always practicing, Reading docs
-            and Updating my skills, This is my{" "}
-            <strong style={{ fontSize: "1.2rem", letterSpacing: "1px" }}>
+            I'm 26 yrs old, an Egyptian living in Alexandria Egypt, Love to
+            combine programming and art, Always practicing, Reading docs,
+            Updating my skills, This is my Life Story{" "}
+            <strong style={{ fontSize: "20px", letterSpacing: "1px" }}>
               Life Story
-            </strong>{" "}
+            </strong>
           </p>
         </div>
 

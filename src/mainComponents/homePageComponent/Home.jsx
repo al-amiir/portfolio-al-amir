@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
 import ButtonNext from "../../components/nextPageButton/ButtonNext";
-// import SplineFace from "../../components/Spline-Face";
 import TwoLines from "./TwoLines";
 
 const SplineFace = React.lazy(() => import("../../components/Spline-Face"));
@@ -16,7 +15,7 @@ const Home = () => {
     setTimeout(() => {
       setLoaderDisplay("none");
       setOpacity(1);
-    }, 5000);
+    }, 10000);
     return () => {
       setOpacity(0);
     };

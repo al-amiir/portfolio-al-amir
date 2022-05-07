@@ -1,9 +1,24 @@
-.menu img {
+.menu_button {
   position: fixed;
   right: 29px;
   top: 26px;
+  width: fit-content;
+  height: fit-content;
   z-index: 3000;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_button span {
+  content: "";
+  width: 6px;
+  height: 43px;
+  background-color: #008d3f;
+  margin: 2px;
+  border: 1px solid;
+  transition: 0.2s;
 }
 .menu-content {
   display: flex;
@@ -17,6 +32,11 @@
   clip-path: inset(0 50%);
   transition: 0.5s;
   backdrop-filter: grayscale(1);
+}
+@supports not (backdrop-filter: grayscale(1)) {
+  .menu-content {
+    background-color: #000000db;
+  }
 }
 .menu-content button {
   display: flex;

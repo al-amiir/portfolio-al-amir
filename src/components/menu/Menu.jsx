@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./styles/menu.css";
 
-const Menu = ({ setDisplayedLocation }) => {
+const Menu = ({ setGreyFilter }) => {
   const [display, setDisplay] = useState(false);
+  const [buttonColor, setButtonColor] = useState("#158744");
+
   function handleDisplayMenu(seconds = 0) {
+    setButtonColor((prev) => (prev === "#158744" ? "#a30000" : "#158744"));
+    setGreyFilter((prev) =>
+      prev === "grayscale(0)" ? "grayscale(1)" : "grayscale(0)"
+    );
     setTimeout(() => {
       setDisplay((prev) => !prev);
     }, seconds);
@@ -11,10 +18,12 @@ const Menu = ({ setDisplayedLocation }) => {
 
   return (
     <div className="menu">
-      <img
-        onClick={handleDisplayMenu}
-        src="https://img.icons8.com/ios-filled/50/ff7400/stripped-patterns-2.png"
-      />
+      <div onClick={handleDisplayMenu} className="menu_button">
+        <span style={{ backgroundColor: `${buttonColor}` }}></span>
+        <span style={{ backgroundColor: `${buttonColor}` }}></span>
+        <span style={{ backgroundColor: `${buttonColor}` }}></span>
+        <span style={{ backgroundColor: `${buttonColor}` }}></span>
+      </div>
       <div
         className="menu-content"
         style={{

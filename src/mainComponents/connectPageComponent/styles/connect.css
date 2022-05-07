@@ -7,7 +7,7 @@
 .connect_links {
   position: fixed;
   left: 20%;
-  top: 100px;
+  top: 70px;
   list-style: decimal-leading-zero;
   font-size: 47px;
   z-index: 12;

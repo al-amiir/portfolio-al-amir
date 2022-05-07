@@ -12,7 +12,6 @@
 
 @import url(../mainComponents/connectPageComponent/styles/connect.css);
 
-@import url(../styles/components/menu.css);
 @import url(../styles/components/buttons.css);
 
 *,
@@ -34,8 +33,14 @@ body::-webkit-scrollbar {
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
+  overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+}
+@-moz-document url-prefix() {
+  /* Disable scrollbar Firefox */
+  html {
+    scrollbar-width: none;
+  }
 }
 
 a {

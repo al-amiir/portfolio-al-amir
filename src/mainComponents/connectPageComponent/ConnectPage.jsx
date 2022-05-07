@@ -17,6 +17,14 @@ const ConnectPage = () => {
       <ul className="connect_links">
         <li>
           <a
+            href="https://docs.google.com/document/d/1Ib8fcVEwBZkPbYGxaiinklCVOFpSoUs7RKY_7aIa1Ic/edit"
+            target="_blank"
+          >
+            CV
+          </a>
+        </li>
+        <li>
+          <a
             href="https://accounts.google.com/b/0/AddMailService"
             target="_blank"
           >

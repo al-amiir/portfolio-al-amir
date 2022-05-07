@@ -3,7 +3,7 @@
 }
 .story_tape-box-image {
   position: absolute;
-  top: -53px;
+  top: -45px;
   left: -148px;
 }
 .story_tape {
@@ -11,13 +11,19 @@
   width: 1500px;
   display: flex;
   justify-content: space-around;
-  border-block: 10px dashed white;
+  border-block: 10px dashed wheat;
   outline: 13px solid;
   margin-top: 13px;
   padding-block: 10px;
   background-color: black;
   transition: 0.5s;
-  overflow: auto;
+}
+.story_tape-p {
+  position: absolute;
+  color: #d52222;
+  left: -112px;
+  top: 54%;
+  font-size: 17px;
 }
 .story_tape-parts {
   position: relative;
@@ -37,7 +43,8 @@
   width: 300px;
   height: 300px;
   border-radius: 4px;
-  filter: contrast(1.1) saturate(1.2) brightness(0.9);
+  filter: contrast(1.1) saturate(1.4) brightness(0.9);
+  transform: rotateY(180deg);
 }
 
 .story_tape-parts-text {
@@ -49,9 +56,10 @@
   left: 0;
   white-space: normal;
   padding: 10px;
+  padding-top: 20px;
   transition: 0.3s;
   color: black;
-  font-size: 1.1rem;
+  font-size: 18px;
   opacity: 0;
 }
 .story_tape-parts-text:hover {

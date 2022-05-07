@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Loader from "./components/loader/Loader";
-import Menu from "./components/Menu";
+import Menu from "./components/menu/Menu";
 
 const Home = React.lazy(() =>
   import("./mainComponents/homePageComponent/Home")
@@ -18,11 +18,12 @@ const ConnectPage = React.lazy(() =>
 );
 
 const App = () => {
-  const [loaderWidth, setLoaderWidth] = useState("100vw");
+  const [greyFilter, setGreyFilter] = useState("grayscale(0)");
   return (
     <BrowserRouter>
-      <Menu />
+      <Menu setGreyFilter={setGreyFilter} />
       <React.Suspense fallback={<Loader />}>
+        <section style={{ filter: `${greyFilter}` }}></section>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/story" element={<Story />} />
