@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
-import mernImage from "../../styles/pics/projects/mern.png";
-import portfolioImage from "../../styles/pics/projects/portfolio1.png";
-import furnitureImage from "../../styles/pics/projects/furniture.png";
 import ProjectDetails from "./ProjectDetails";
 import ProjectTubes from "./ProjectTubes";
-import ButtonNext from "../../components/nextPageButton/ButtonNext";
+// Images
+import portfolioImage from "../../styles/pics/projects/portfolio1.jpg";
+import duchessImage from "../../styles/pics/projects/duchess.jpg";
+import mernImage from "../../styles/pics/projects/mern.jpg";
+import furnitureImage from "../../styles/pics/projects/furniture.jpg";
+import boutiqueImage from "../../styles/pics/projects/boutique.jpg";
+import hyakahImage from "../../styles/pics/projects/hyakah.jpg";
+import xshopImage from "../../styles/pics/projects/xshop.jpg";
+import xstudiosImage from "../../styles/pics/projects/xstudios.jpg";
 
 const ProjectPage = () => {
   const [opacity, setOpacity] = useState(0);
@@ -44,7 +49,7 @@ const ProjectPage = () => {
         youtube: "",
         code: "",
       },
-      image: mernImage,
+      image: duchessImage,
     },
     {
       number: "02",
@@ -68,7 +73,7 @@ const ProjectPage = () => {
         youtube: "",
         code: "",
       },
-      image: mernImage,
+      image: boutiqueImage,
     },
     {
       number: 4,
@@ -80,7 +85,7 @@ const ProjectPage = () => {
         youtube: "",
         code: "",
       },
-      image: mernImage,
+      image: hyakahImage,
     },
     {
       number: 5,
@@ -92,7 +97,7 @@ const ProjectPage = () => {
         youtube: "",
         code: "",
       },
-      image: mernImage,
+      image: xshopImage,
     },
     {
       number: 6,
@@ -104,7 +109,7 @@ const ProjectPage = () => {
         youtube: "",
         code: "",
       },
-      image: mernImage,
+      image: xstudiosImage,
     },
     {
       number: 7,

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Cursor from "./components/cursor/Cursor";
 import Loader from "./components/loader/Loader";
 import Menu from "./components/menu/Menu";
 
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Menu setGreyFilter={setGreyFilter} />
+      <Cursor />
       <React.Suspense fallback={<Loader />}>
         <section style={{ filter: `${greyFilter}` }}></section>
         <Routes>

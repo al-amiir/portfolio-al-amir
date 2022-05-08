@@ -14,13 +14,13 @@ const ProjectDetails = ({ projectInfo }) => {
         </div>
         <div className="project_details-buttons">
           <a href={projectInfo.links.live} target="_blanck">
-            <img src="https://img.icons8.com/glyph-neue/40/000000/link.png" />
+            <img src="https://img.icons8.com/glyph-neue/30/000000/link.png" />
           </a>
           <a href={projectInfo.links.code} target="_blanck">
-            <img src="https://img.icons8.com/ios-filled/40/000000/github.png" />
+            <img src="https://img.icons8.com/ios-filled/30/000000/github.png" />
           </a>
           <a href={projectInfo.links.youtube} target="_blanck">
-            <img src="https://img.icons8.com/color/48/000000/youtube-play.png" />
+            <img src="https://img.icons8.com/color/38/000000/youtube-play.png" />
           </a>
         </div>
       </div>

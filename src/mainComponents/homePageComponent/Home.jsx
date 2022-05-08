@@ -15,7 +15,7 @@ const Home = () => {
     setTimeout(() => {
       setLoaderDisplay("none");
       setOpacity(1);
-    }, 10000);
+    }, 7000);
     return () => {
       setOpacity(0);
     };

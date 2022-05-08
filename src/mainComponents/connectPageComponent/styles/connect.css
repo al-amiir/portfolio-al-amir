@@ -50,6 +50,9 @@
   .hire {
     font-size: 215px;
   }
+  .connect_links {
+    top: 90px;
+  }
 }
 @media screen and (max-width: 800px) {
   .hire {
@@ -61,5 +64,15 @@
   .hire {
     font-size: 104px;
     bottom: 61px;
+  }
+  .connect_links {
+    top: 115px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hire {
+    font-size: 80px;
+    bottom: 65px;
   }
 }
