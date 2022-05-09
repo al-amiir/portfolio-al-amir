@@ -9,16 +9,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border: 2px solid;
+  padding: 4px;
+  background-color: #158744;
+}
+.menu_button div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff000000;
+  z-index: 1;
 }
 
 .menu_button span {
   content: "";
-  width: 6px;
-  height: 43px;
-  background-color: #008d3f;
+  width: 2px;
+  height: 20px;
+  background-color: #000000;
   margin: 2px;
   border: 1px solid;
   transition: 0.2s;
+}
+
+.menu_button span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  margin-top: 50px;
+  border: 1px solid;
+  transition: 0.2s;
+  /* transform: translateY(); */
 }
 .menu-content {
   display: flex;
@@ -39,6 +62,7 @@
   }
 }
 .menu-content button {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +73,11 @@
   font-size: 75px;
   font-family: "Bebas Neue", cursive, sans-serif;
   background-color: orange;
-  border: none;
+  border-inline: 3px solid;
+  border-block: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+.menu-content button:hover {
+  background-color: red;
 }

@@ -12,9 +12,24 @@
   font-size: 47px;
   z-index: 12;
 }
-.connect_links li a {
-  color: black;
+.connect_links li {
+  position: relative;
+  width: fit-content;
 }
+.connect_links li::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 7px;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: 0.3s;
+}
+.connect_links li:hover::after {
+  width: 100%;
+}
+
 .hire {
   font-size: 273px;
   width: 100%;
@@ -39,7 +54,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* background-image: linear-gradient(5deg, #ff0000, #100000); */
   background-image: linear-gradient(180deg, #a30000, black);
 
   z-index: 10;

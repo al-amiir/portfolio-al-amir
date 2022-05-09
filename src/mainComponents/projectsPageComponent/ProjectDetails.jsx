@@ -13,9 +13,14 @@ const ProjectDetails = ({ projectInfo }) => {
           <p>{projectInfo.description}</p>
         </div>
         <div className="project_details-buttons">
-          <a href={projectInfo.links.live} target="_blanck">
-            <img src="https://img.icons8.com/glyph-neue/30/000000/link.png" />
-          </a>
+          {projectInfo.links.live.length > 0 ? (
+            <a href={projectInfo.links.live} target="_blanck">
+              <img src="https://img.icons8.com/glyph-neue/30/000000/link.png" />
+            </a>
+          ) : (
+            ""
+          )}
+
           <a href={projectInfo.links.code} target="_blanck">
             <img src="https://img.icons8.com/ios-filled/30/000000/github.png" />
           </a>

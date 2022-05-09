@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles/menu.css";
+import anime from "animejs";
 
 const Menu = ({ setGreyFilter }) => {
   const [display, setDisplay] = useState(false);
@@ -16,13 +17,38 @@ const Menu = ({ setGreyFilter }) => {
     }, seconds);
   }
 
+  function handleMenuButtonHover() {
+    anime({
+      targets: ".menu_button span",
+      translateY: ["0px", "-50px"],
+      delay: anime.stagger(100),
+      duration: 100,
+    });
+  }
+  function handleMenuButtonLeave() {
+    anime({
+      targets: ".menu_button span",
+      translateY: ["-50px", "0px"],
+      delay: anime.stagger(100),
+      duration: 100,
+    });
+  }
+
   return (
     <div className="menu">
-      <div onClick={handleDisplayMenu} className="menu_button">
-        <span style={{ backgroundColor: `${buttonColor}` }}></span>
-        <span style={{ backgroundColor: `${buttonColor}` }}></span>
-        <span style={{ backgroundColor: `${buttonColor}` }}></span>
-        <span style={{ backgroundColor: `${buttonColor}` }}></span>
+      <div
+        onClick={handleDisplayMenu}
+        className="menu_button"
+        style={{ backgroundColor: `${buttonColor}` }}
+      >
+        <div
+          onMouseOver={handleMenuButtonHover}
+          onMouseLeave={handleMenuButtonLeave}
+        ></div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <div
         className="menu-content"

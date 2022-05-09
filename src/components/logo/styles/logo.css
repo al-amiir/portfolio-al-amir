@@ -1,0 +1,24 @@
+.logo {
+  position: fixed;
+  top: 37px;
+  left: 15px;
+  z-index: 200;
+  font-size: 25px;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.logo:hover::after {
+  width: 100%;
+}

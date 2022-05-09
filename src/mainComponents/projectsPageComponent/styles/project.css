@@ -28,11 +28,11 @@
   font-family: sans-serif;
   margin-bottom: 10px;
   width: 400px;
+  min-height: 70px;
 }
 .project_details-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .project_details-buttons a {

@@ -7,6 +7,21 @@
   letter-spacing: 3px;
   font-size: 20px;
 }
+.button_next:hover .button_next-text::after {
+  width: 95px;
+  transform: translateX(-87px);
+}
 .button_next-text {
   margin-right: 5px;
+}
+
+.button_next-text::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 48%;
+  transform: translateX(0px);
+  transition: 0.3s;
 }

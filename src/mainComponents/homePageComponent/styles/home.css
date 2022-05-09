@@ -7,11 +7,16 @@
   background-image: linear-gradient(180deg, #a30000, black);
   transition: 3s;
 }
-
+.home_3dImage {
+  position: fixed;
+  z-index: 100;
+  filter: contrast(1.1) saturate(1.1);
+}
 .home_navigation {
   position: fixed;
   right: 29px;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 500;
 }
 .splineFace {
@@ -20,13 +25,13 @@
   z-index: 100;
 }
 
-.logo {
+/* .logo {
   position: fixed;
   top: 37px;
   left: 15px;
   font-size: 25px;
   letter-spacing: 10px;
-}
+} */
 .copyRight {
   position: fixed;
   display: flex;
@@ -45,27 +50,12 @@
   width: 100% !important;
   height: 100% !important;
 }
-/* @media only screen and (max-width: 700px) {
-  .splineFace {
-    height: 700px;
+
+@media only screen and (max-width: 400px) {
+  .home_3dImage {
+    width: 850px;
   }
-}
-@media only screen and (max-width: 500px) {
-  .splineFace {
-    position: fixed;
-    left: 0px;
-    height: 500px;
-    width: 350px;
-  }
-  .button_story span {
-    display: none;
-  }
-} */
-@media only screen and (max-width: 450px) {
-  /* .splineFace {
-    display: none !important;
-  } */
-  .button_story span {
-    display: initial;
+  .home_navigation a {
+    flex-direction: column;
   }
 }

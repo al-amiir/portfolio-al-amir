@@ -50,8 +50,13 @@ const Story = () => {
           <p className="story_text-intro">
             I'm 26 yrs old, an Egyptian living in Alexandria Egypt, Love to
             combine programming and art, Always practicing, Reading docs,
-            Updating my skills, This is my Life Story{" "}
-            <strong style={{ fontSize: "20px", letterSpacing: "1px" }}>
+            Updating my skills, and This is my{" "}
+            <strong
+              style={{
+                fontSize: "20px",
+                letterSpacing: "1px",
+              }}
+            >
               Life Story
             </strong>
           </p>

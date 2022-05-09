@@ -3,11 +3,11 @@
   left: 0;
   right: 0;
   transition: 0.1s;
-  width: 30px;
-  height: 30px;
-  background-color: #ff000000;
+  width: 40px;
+  height: 40px;
   z-index: 100;
-  border: 2px solid wheat;
+  outline: 2px solid rgb(0, 0, 0);
+  backdrop-filter: invert(1);
   border-radius: 50%;
   z-index: 10000;
 }

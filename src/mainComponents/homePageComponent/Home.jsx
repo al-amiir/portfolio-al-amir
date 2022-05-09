@@ -1,21 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
 import ButtonNext from "../../components/nextPageButton/ButtonNext";
 import TwoLines from "./TwoLines";
-
-const SplineFace = React.lazy(() => import("../../components/Spline-Face"));
+import dImgae from "../../styles/pics/3d.png";
+import Logo from "../../components/logo/Logo";
 const Home = () => {
   const [opacity, setOpacity] = useState(0);
-  const [loaderDisplay, setLoaderDisplay] = useState("block");
   useEffect(() => {
     document.body.style.width = "100vw";
     document.body.style.height = "100vh";
-
-    setTimeout(() => {
-      setLoaderDisplay("none");
-      setOpacity(1);
-    }, 7000);
+    setOpacity(1);
     return () => {
       setOpacity(0);
     };
@@ -23,12 +17,9 @@ const Home = () => {
 
   return (
     <React.Suspense fallback={<Loader />}>
-      <div style={{ display: `${loaderDisplay}` }}>
-        <Loader />
-      </div>
       <div className="home" style={{ opacity: `${opacity}` }}>
-        <span className="logo">portfolio</span>
-        {/* <SplineFace /> */}
+        <Logo />
+        <img src={dImgae} className="home_3dImage" alt="" />
         <TwoLines />
         <div className="home_navigation">
           <ButtonNext to="/story" name="My Story" />

@@ -29,25 +29,23 @@ const ProjectPage = () => {
     {
       number: "00",
       name: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      description: "This was my first portfolio I made in 2020.",
       links: {
-        live: "",
+        live: "https://al-amiir.github.io/",
         youtube:
           "https://www.youtube.com/watch?v=yHXzoj2mp-g&t=0s&ab_channel=AlAmir",
-        code: "",
+        code: "https://github.com/al-amiir/al-amiir.github.io",
       },
       image: portfolioImage,
     },
     {
       number: "01",
-      name: "MERN",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      name: "Duchess",
+      description: "a Landing Page for a Brand New Jewellery Store.",
       links: {
-        live: "",
-        youtube: "",
-        code: "",
+        live: "https://al-amiir.github.io/Jewellery__Store/",
+        youtube: "https://youtu.be/B3A8s_wwvt8",
+        code: "https://github.com/al-amiir/Jewellery__Store/blob/main/README.md",
       },
       image: duchessImage,
     },
@@ -55,71 +53,69 @@ const ProjectPage = () => {
       number: "02",
       name: "furniture",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+        "an E-commerce web app that uses 3D in intro & Commerce.js to fetch data from.",
       links: {
         live: "",
-        youtube: "",
-        code: "",
+        youtube: "https://youtu.be/4EFq7s8OoWc",
+        code: "https://github.com/al-amiir/furniture",
       },
       image: furnitureImage,
     },
     {
       number: "03",
-      name: "portfolio",
+      name: "Boutique",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+        "an E-commerce app, Focuses mainly on Fetching Products from commerce.js.",
       links: {
-        live: "",
-        youtube: "",
-        code: "",
+        live: "https://al-amiir.github.io/Boutique/",
+        youtube: "https://youtu.be/zKDwLI7SGHI",
+        code: "https://github.com/al-amiir/Boutique",
       },
       image: boutiqueImage,
     },
     {
       number: 4,
-      name: "MERN",
+      name: "Hyakah",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+        "an ANGULAR web app that consist of Define New Produc Products List view Add Quantity Product Evaluation",
       links: {
         live: "",
-        youtube: "",
-        code: "",
+        youtube: "https://www.youtube.com/watch?v=ltvwlV0dq6c",
+        code: "https://github.com/al-amiir/hyakah-web-app",
       },
       image: hyakahImage,
     },
     {
       number: 5,
-      name: "MERN",
+      name: "SwiftX Shop",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+        "an E-commerce web app that fetches data from the GraphQL endpoint.",
       links: {
         live: "",
-        youtube: "",
-        code: "",
+        youtube: "https://www.youtube.com/watch?v=2NCkstSViic",
+        code: "https://github.com/al-amiir/swiftx-shop",
       },
       image: xshopImage,
     },
     {
       number: 6,
-      name: "MERN",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      name: "X Studios",
+      description: "Xstudios Agency's Website.",
       links: {
         live: "",
-        youtube: "",
-        code: "",
+        youtube: "https://www.youtube.com/watch?v=U9wmJrfkIOo",
+        code: "https://github.com/al-amiir/Xstudios",
       },
       image: xstudiosImage,
     },
     {
       number: 7,
-      name: "MERN",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero cumque dicta",
+      name: "Authentication",
+      description: `a simple web app about user authentication, authorization.`,
       links: {
         live: "",
-        youtube: "",
-        code: "",
+        youtube: "https://www.youtube.com/watch?v=WrJEdH7nghY",
+        code: "https://github.com/al-amiir/mern-authntication-system",
       },
       image: mernImage,
     },
