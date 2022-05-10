@@ -71,13 +71,13 @@
 @media screen and (max-width: 800px) {
   .hire {
     font-size: 158px;
-    bottom: 39px;
+    bottom: 65px;
   }
 }
 @media screen and (max-width: 600px) {
   .hire {
     font-size: 104px;
-    bottom: 61px;
+    bottom: 83px;
   }
   .connect_links {
     top: 115px;
@@ -87,6 +87,6 @@
 @media screen and (max-width: 400px) {
   .hire {
     font-size: 80px;
-    bottom: 65px;
+    bottom: 90px;
   }
 }

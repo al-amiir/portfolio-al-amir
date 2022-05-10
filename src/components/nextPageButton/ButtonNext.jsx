@@ -5,7 +5,7 @@ const ButtonNext = ({ to, name }) => {
   return (
     <Link className="button_next" to={to}>
       <span className="button_next-text">{name}</span>
-      <img src="https://img.icons8.com/ios/50/ffffff/long-arrow-right.png" />{" "}
+      <img src="https://img.icons8.com/ios/50/f5deb3/long-arrow-right.png" />{" "}
     </Link>
   );
 };

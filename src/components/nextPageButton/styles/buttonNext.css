@@ -25,3 +25,8 @@
   transform: translateX(0px);
   transition: 0.3s;
 }
+@media only screen and (max-width: 400px) {
+  .button_next-text::after {
+    display: none;
+  }
+}
