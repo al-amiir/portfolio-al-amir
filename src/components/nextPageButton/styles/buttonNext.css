@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: var(--button);
   letter-spacing: 3px;
   font-size: 20px;
 }
@@ -20,7 +20,7 @@
   position: absolute;
   width: 50px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--button);
   top: 48%;
   transform: translateX(0px);
   transition: 0.3s;

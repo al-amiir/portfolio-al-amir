@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ScrollButton from "../../components/ScrollButton";
+import ScrollButton from "../../components/buttons/ScrollButton";
 import StoryTape from "./StoryTape";
 import alamirPhoto from "../../styles/pics/amir.png";
 import arrowImage from "../../styles/pics/arrow.png";
-
 const Story = () => {
   const [opacity, setOpacity] = useState(0);
   let offset = 0;

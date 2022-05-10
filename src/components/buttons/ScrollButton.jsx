@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
-
+import "./styles/buttons.css";
 const ScrollButton = () => {
   useEffect(() => {
     anime({

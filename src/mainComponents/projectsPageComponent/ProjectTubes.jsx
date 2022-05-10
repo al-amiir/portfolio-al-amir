@@ -8,8 +8,8 @@ const ProjectTubes = ({ projectStyle, setProjectStyle, setProjectIndex }) => {
           return {
             ...p,
             height: "100px",
-            border: "1px solid rgb(255 0 0)",
-            backgroundColor: "rgb(255 0 0 )",
+            border: "1px solid wheat",
+            backgroundColor: "wheat",
             boxShadow: "black 1px -1px 18px",
           };
         // if (i === index - 1)
@@ -62,7 +62,7 @@ const ProjectTubes = ({ projectStyle, setProjectStyle, setProjectIndex }) => {
           return {
             ...p,
             height: "80px",
-            border: "1px solid #710000",
+            border: "1px solid wheat",
             backgroundColor: "transparent",
             boxShadow: "0 0 black",
           };

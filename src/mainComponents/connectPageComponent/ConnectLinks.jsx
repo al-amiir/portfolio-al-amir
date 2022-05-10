@@ -7,7 +7,7 @@ const ConnectLinks = () => {
       name: "CV",
     },
     {
-      link: "https://accounts.google.com/b/0/AddMailService",
+      link: "engineeralamiir@gmail.com",
       name: "GMAIL",
     },
     {
@@ -27,7 +27,14 @@ const ConnectLinks = () => {
     <ul className="connect_links">
       {connectionArray.map((li, i) => (
         <li key={i}>
-          <a href={li.link} target="_blank">
+          <a
+            href={
+              li.link === "engineeralamiir@gmail.com"
+                ? "mailto:engineeralamiir@gmail.com"
+                : li.link
+            }
+            target="_blank"
+          >
             {li.name}
           </a>
         </li>

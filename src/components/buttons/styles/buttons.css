@@ -10,12 +10,12 @@
   width: 60px;
   height: 20px;
   /* background-color: red; */
-  border: 3px solid rgb(255, 0, 0);
+  border: 3px solid var(--button);
   border-radius: 64px;
 }
 .button_scroll span {
   width: 10px;
   height: 10px;
-  background-color: rgb(255, 0, 0);
+  background-color: var(--button);
   border-radius: 50%;
 }

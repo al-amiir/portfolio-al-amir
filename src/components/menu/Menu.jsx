@@ -5,10 +5,10 @@ import anime from "animejs";
 
 const Menu = ({ setGreyFilter }) => {
   const [display, setDisplay] = useState(false);
-  const [buttonColor, setButtonColor] = useState("#158744");
+  const [buttonColor, setButtonColor] = useState("wheat");
 
   function handleDisplayMenu(seconds = 0) {
-    setButtonColor((prev) => (prev === "#158744" ? "#a30000" : "#158744"));
+    setButtonColor((prev) => (prev === "wheat" ? "#a30000" : "wheat"));
     setGreyFilter((prev) =>
       prev === "grayscale(0)" ? "grayscale(1)" : "grayscale(0)"
     );

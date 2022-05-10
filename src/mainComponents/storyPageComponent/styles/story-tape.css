@@ -20,10 +20,11 @@
 }
 .story_tape-p {
   position: absolute;
-  color: #d52222;
-  left: -112px;
+  color: var(--button);
+  left: -125px;
   top: 54%;
   font-size: 17px;
+  letter-spacing: 1px;
 }
 .story_tape-parts {
   position: relative;
@@ -51,7 +52,7 @@
   position: absolute;
   height: 100%;
   z-index: 1000;
-  background-color: #ff7400;
+  background-color: #e55904;
   top: 0;
   left: 0;
   white-space: normal;

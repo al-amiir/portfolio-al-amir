@@ -1,12 +1,13 @@
 .logo {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 37px;
   left: 15px;
   z-index: 200;
   font-size: 25px;
   letter-spacing: 10px;
-  display: flex;
-  justify-content: center;
+  color: var(--button);
 }
 
 .logo::after {

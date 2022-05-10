@@ -12,8 +12,6 @@
 
 @import url(../mainComponents/connectPageComponent/styles/connect.css);
 
-@import url(../styles/components/buttons.css);
-
 *,
 *::before,
 *::after {
@@ -47,4 +45,17 @@ a {
   text-decoration: none;
   font-family: "Bebas Neue", cursive, sans-serif;
   color: black;
+}
+
+/* Variables  */
+:root {
+  --gradient: linear-gradient(
+    180deg,
+    #bb4a03,
+    #a30000,
+    #6a040f,
+    #370617,
+    #03071e
+  );
+  --button: wheat;
 }

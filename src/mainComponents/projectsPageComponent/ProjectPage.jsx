@@ -74,7 +74,7 @@ const ProjectPage = () => {
       image: boutiqueImage,
     },
     {
-      number: 4,
+      number: "04",
       name: "Hyakah",
       description:
         "an ANGULAR web app that consist of Define New Produc Products List view Add Quantity Product Evaluation",
@@ -86,7 +86,7 @@ const ProjectPage = () => {
       image: hyakahImage,
     },
     {
-      number: 5,
+      number: "05",
       name: "SwiftX Shop",
       description:
         "an E-commerce web app that fetches data from the GraphQL endpoint.",
@@ -98,7 +98,7 @@ const ProjectPage = () => {
       image: xshopImage,
     },
     {
-      number: 6,
+      number: "06",
       name: "X Studios",
       description: "Xstudios Agency's Website.",
       links: {
@@ -109,7 +109,7 @@ const ProjectPage = () => {
       image: xstudiosImage,
     },
     {
-      number: 7,
+      number: "07",
       name: "Authentication",
       description: `a simple web app about user authentication, authorization.`,
       links: {
