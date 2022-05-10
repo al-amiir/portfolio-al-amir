@@ -1,0 +1,1 @@
+.button_scroll{position:fixed;bottom:10px;left:50%;transform:translate(-50%);display:flex;justify-content:center;align-items:center;z-index:500;width:60px;height:20px;border:3px solid var(--button);border-radius:64px}.button_scroll span{width:10px;height:10px;background-color:var(--button);border-radius:50%}
