@@ -2,7 +2,7 @@
   "name": "-",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://al-amiir.github.io/portfolio-al-amir",
+  "homepage": "https://al-amiir.github.io/portfolio-al-amir/",
   "scripts": {
     "postinstall": "npm run start",
     "start": "vite",
