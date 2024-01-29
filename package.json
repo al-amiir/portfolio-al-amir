@@ -7,7 +7,9 @@
     "postinstall": "npm run start",
     "start": "vite",
     "build": "react-scripts build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@splinetool/react-spline": "^2.0.0",
